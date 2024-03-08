@@ -13,6 +13,7 @@ public class ProductServiceInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         return HandlerInterceptor.super.preHandle(request, response, handler);
+//        return true;
     }
 
     @Override

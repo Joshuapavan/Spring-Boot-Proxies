@@ -16,8 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductsController {
 
-    private static ProductService productService;
-
+    private final ProductService productService;
     @GetMapping
     public ResponseEntity<List<Product>> getAllProducts(){
         return new ResponseEntity<>(productService.getAllProducts(), HttpStatus.OK);
